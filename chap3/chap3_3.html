@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <link rel="short-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1920px-Flag_of_South_Korea.svg.png">
+        <style>
+            /* 위에서 아래로 적용된다는 성질을 적용하면 코드를 다시 다 작성할 필요가 없다. */
+            /* *은 모든 속성에 적용해준다. */
+            * {
+                border: 1px dashed black;
+            }
+            html {
+                background-color: tomato;
+            }
+            body {
+                margin:20px;
+                padding:20px;
+                background-color: thistle;
+            }
+            /* margin은 border로부터 바깥쪽이고 padding은 border로부터 안쪽이다. */
+            div {
+                padding: 10px;
+                border: 2px solid black;
+            }
+            /* #id로 개별로 지정해주는 것이 가능하다. */
+            /* css에서의 id와 html에서의 id가 같아야 적용이 된다. */
+            #first {
+                background-color: whitesmoke;
+                height:150px;
+                width:150px;
+            }
+            #second {
+                background-color: teal;
+                height:100px;
+                width:100px;
+            }
+            #third {
+                background-color: wheat;
+                height:50px;
+                width:50px;
+            }
+            #fourth {
+                background-color: blanchedalmond;
+                height:25px;
+                width:25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first">
+            <div id="second">
+                <div id="third">
+                    <div id="fourth">
+                        <!-- span에도 1px dashed black이라는 속성이 적용되어 있다. -->
+                        <span>Hello</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
