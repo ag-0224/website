@@ -1,0 +1,49 @@
+<!-- Pseudo selectors -->
+<!-- 좀 더 세부적으로 엘리먼트를 선택해주는 것 -->
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <style>
+            body {
+                height: 1000vh;
+                margin: 50px;
+            }
+            div {
+                width: 150px;
+                height: 150px;
+                background-color: wheat;
+                position: relative;
+            }
+            /* id를 통해서 지정하는 것보다 pseudo selector를 활용하도록 하자. */
+            div:first-child {
+                background-color: tomato;
+            }
+            div:last-child {
+                background-color: teal;
+            }
+            span {
+                background-color: tomato;
+            }
+            /* span:nth-child(even)을 통해서도 똑같이 구현할 수 있다. */
+            /* 2n + 1 처럼 수식을 통해서도 적용할 수 있다. */
+            span:nth-child(2),
+            span:nth-child(4){
+                background-color: teal;
+            } 
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+    </body>
+</html>
