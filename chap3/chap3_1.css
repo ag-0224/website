@@ -1,0 +1,12 @@
+/* Selector */
+
+/* html에 있는 대상을 가르키는 데 사용함 */
+
+body {
+    background-color: red;
+}
+
+/* 브라우저는 css를 위에서부터 차례로 읽기 때문에 만일 중복된다면 가장 마지막 코드가 적용된다. */
+h1 {
+    color : yellowgreen;
+}

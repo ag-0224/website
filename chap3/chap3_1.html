@@ -1,0 +1,45 @@
+<!-- CSS -->
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home - My first website.</title>
+        <!-- css를 html파일에 추가하려면 style은 head 부분에 와야한다. -->
+        <!-- inline css -->
+        <style>
+            /* css에서는 항상 마지막에 세미콜론을 붙여야한다. */
+            /* 속성에 알맞은 값을 써야한다. */
+            /* 원하는 태그를 지정하고 원하는 속성값을 쓰면 된다. */
+            h1 {
+                color: blue;
+                font-weight: 200;
+                font-style: italic;
+            }
+            /* 겹치는 것이 없다면 둘 다 적용된다. */
+            h1 {
+                font-size:50px;
+            }
+            /* 속성 이름 - 속성값, 속성이름은 띄어쓰기는 하면 안된다. */
+            address {
+                text-align: center;
+                color:tomato;
+            }
+            /* 브라우저는 위에서 아래로 순차적으로 읽는다. */
+        </style>
+        <!-- style 파일을 별도로 두고 싶으면 link로 연결한다. -->
+        <!-- css 파일과 html 문서의 관계를 stylesheet라고 명시해준다. -->
+        <!-- external css -->
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>Hello This is My website.</h1>
+        </header>
+        <main>
+            <address>website</address>
+        </main>
+        <footer>
+            &copy; 2020 N.C
+        </footer>
+    </body>
+</html>
