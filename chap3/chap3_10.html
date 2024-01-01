@@ -1,0 +1,60 @@
+<!-- States -->
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <style>
+            body {
+                height: 1000vh;
+                margin: 50px;
+            }
+            button {
+                padding: 5px;
+                border-radius: 10px;
+            }
+            button:active {
+                background-color: tomato;
+            }
+            /* hover는 마우스가 올라가 있는 상태를 말한다. */
+            button:hover {
+                background-color: teal;
+            }
+            /* focus는 마우스뿐만 아니라 키보드로도 선택이 가능하다. */
+            input:focus {
+                background-color: tomato;
+            }
+            /* visited는 방문했던 웹사이트면 효과를 적용시키는 데 사용가능하다. */
+            a:visited {
+                color: tomato;
+            }
+            form {
+                border: 1px solid salmon;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+            /* focus-within은 focused인 자식을 가진 부모 엘리먼트에 적용되는 것이다. */
+            form:focus-within {
+                border-color: seagreen;
+            }
+            /* 여러 조건을 연계해서 적용하는 것이 가능하다. */
+            form:hover input:focus {
+                background-color: sienna;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button>Hello</button>
+            <input type="text" />
+            <input type="text" />
+            <a href="https://apple.com">Go to apple</a>
+            <form>
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+            </form>
+        </div>
+    </body>
+</html>
