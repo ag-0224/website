@@ -1,0 +1,59 @@
+<!-- html 파일에서 첫 줄에 나오며 단 하나 이어야 하며 필수로 추가 해주어야 함. -->
+<!-- 이 코드는 브라우저에게 이건 text 파일이 아니라 html 문서라고 알려주는 것이다. -->
+<!-- 브라우저는 이 코드가 없어도 아무런 말을 해주지 않는다. 하지만 규칙이고 꼭 따라야 한다. -->
+<!DOCTYPE html>
+
+<!-- html 태그 사이에 넣는 게 html 코드가 된다. -->
+<!-- lang attribute를 넣는 이유는 구글, 네이버, bing 같은 사이트에게 사이트의 사용되는 언어를 알려주기 위함이다. -->
+<html lang="kr">
+    <!-- head는 페이지의 환경 설정을 해주는 곳이다. -->
+    <!-- head 태그 안에 있는 모든 태그들은 보여지지 않는다.-->
+    <head>
+        <link
+            rel="shortcut icon"
+            sizes="16x16 32x32 64x64"
+            href="https://nomadcoders.co/m.png"
+        />
+        <!-- title은 구글이 검색에 중요한 비중을 가지고 있다. -->
+        <title>Home - My first website.</title>
+        <!--meta 태그들은 self-closing이다. -->
+        <!-- title 태그 밖에 코드를 작성하면 웹사이트에 표시되는 데 이것은 잘못된 것이다. 항상 태그 안에 코드를 작성하자. -->
+        <!-- meta 태그의 meta는 부가적인 정보라는 뜻이다. -->
+        <!-- 요소는 title, base, link, style 그리고 script 요소를 사용하여 표현할 수 없는 다양한 것을 나타낸다.-->
+        <meta name="description" content="This is my website" />
+        <!-- 한글이나 다른 특수문자가 있는 언어를 입력할 때 이 charset 메타 태그가 없으면 글자가 깨질 수 있다. 잊지말고 넣고 넣어주어야 한다.-->
+        <meta charset="utf-8"/>
+        <!-- 카카오톡에 공유될 때 나타나는 이미지를 묘사한다. -->
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/383px-Flag_of_South_Korea.svg.png">
+    </head>
+    <!-- 브라우저 화면 상에 보여질 내용들은 전부 body 태그에 있어야한다. -->
+    <body>
+        <h1>
+            Hello!
+        </h1>
+        <a href="http://google.com" target="_self">Go to google.com</a>
+        <img src="image.jpeg" />
+        <!-- paragraph 태그는 길이가 긴 텍스트에 사용하는 태그이다. -->
+        <p>대한민국의 수도는 서울이다.</p>
+        <pre>대한민국의 수도는 서울이다.</pre>
+        <p><abbr title="Korea">대한민국</abbr>의 수도는 <abbr title="Seoul">서울</abbr>이다.</p>
+        <!-- cite 태그는 작성하면 기울임체로 보여주게 한다. -->
+        <cite>대한민국의 수도는 서울이다.</cite>
+        <!-- code 태그는 작성하면 코드처럼 보이게 해준다. -->
+        <code>대한민국의 수도는 서울이다.</code>
+        <!-- mark 태그는 형광펜 효과로 글자를 강조한다. -->
+        <p>I live in <mark>Korea</mark></p>
+        <!-- strong 태그는 글자를 진하게 만들어준다. -->
+        <p>I live in <strong>Korea</strong></p>
+        <!-- sup 태그는 2의 5제곱 같은 text를 입력해줄 때 유용하게 쓸 수 있다. -->
+        <p>2<sup>5</sup></p>
+        <!-- audio 태그는 노래를 적용해준다. -->
+        <!-- contols는 오디오 재생, 볼륨, 탐색, 일시 정지 컨트롤을 제공하고 autoplay는 자동으로 재생하도록 해준다. 둘 모두 enabled는 생략 가능하다.-->
+        <audio
+            controls="enabled"
+            autoplay="enabled"
+            src="https://terms.pstatic.net/audio/ncr/0832_1/20111201120221818_CRON8AKOA.mp3"
+        ></audio>
+        <!-- enabled 와 true 는 동일한 것이다. -->
+    </body>
+</html>
