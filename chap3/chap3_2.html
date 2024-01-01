@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <style>
+            /* margin 요소를 추가하지 않아도 브라우저는 자동으로 추가해준다. */
+            /* margin은 box의 border로부터 바깥에 있는 공간이다. */
+            html {
+                background-color: tomato;
+            }
+            /* margin의 방향을 명시하지 않으면 상하좌우 모두 적용된다. */
+            body {
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                /* 위 오른쪽 아래쪽 왼쪽 (시계 방향) */
+                margin: 20px 10px 20px 10px;
+                /* padding은 경계로부터 안쪽 공간이다. - margin과 마찬가지로 상하좌우로 적용 가능 */
+                padding: 20px;
+                background-color: violet;
+            }
+            div {
+                /* collapsing margins 주의 - body와 div 경계가 같다면 하나가 됨*/
+                margin-left:50px;
+                height: 150px;
+                width: 150px;
+                background-color: whitesmoke;
+            }
+            /* span은 옆에 요소가 올 수 있지만 박스는 그렇지 않다. */
+            span {
+                /* display 기본값은 inline이다. */
+                /* inline은 height와 width가 없다. block은 있다. */
+                display:inline;
+                background-color: turquoise;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 옆에 다른 요소가 올 수 없는 것은 block이라고 부른다. -->
+        <!-- 대부분의 box는 block이라고 한다. -->
+        <div></div>
+        <!-- 옆에 다른 요소가 올 수 있는 것은 inline이라고 부른다. -->
+        <!-- span, a, image는 inline이다. -->
+        <span>대한민국</span>
+        <span>대한민국</span>
+        <span>대한민국</span>
+        <a href="https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg">link</a>
+        <span>hello</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Korea_satelliet.jpg/375px-Korea_satelliet.jpg"/>
+        <span>hello</span>
+        <span>hello</span>
+    </body>
+</html>
