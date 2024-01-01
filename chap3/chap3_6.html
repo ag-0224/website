@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <style>
+            body {
+                height: 1000vh;
+                margin: 20px;
+            }
+            div {
+                /* fixed를 이용하면 커서를 내려도 박스가 제자리에 위치한다. */
+                /* position: fixed; */
+                width: 300px;
+                height: 300px;
+                color: white;
+            }
+            #green {
+                background-color: teal;
+                /* netflix의 메뉴창을 구현할 때 fixed가 쓰인다. */
+                position:fixed;
+                opacity: 0.2;
+            }
+            #different {
+                background-color: wheat;   
+            }
+        </style>
+    </head>
+    <body>
+        <div id="green"></div>
+        <div id="different"></div>
+    </body>
+</html>
