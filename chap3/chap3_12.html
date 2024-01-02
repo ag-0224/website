@@ -1,0 +1,38 @@
+<!-- CSS color -->
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <style>
+            /* 변수를 선언하는 방법 */
+            /* 하나만 수정해도 적용된 모든 것을 바꾸는 것이 가능하다. */
+            :root {
+                /* 변수의 이름은 --변수명 이라고 지어주고 공백을 허용하지 않으므로 -를 사용해야 한다. */
+                --main-color: #fcce00;
+            }
+            body {
+                height: 1000vh;
+                margin: 50px;
+            }
+            p {
+                /* color: #fcce00; */ 
+                color: var(--main-color)
+            }
+            p {
+                color: rgb(252, 206, 0);
+            }
+            /* a는 투명도를 나타낸다. */
+            p {
+                background-color: rgba(252, 206, 0, 50);
+            }
+            a {
+
+            }
+        </style>
+    </head>
+    <body>
+        <p>CSS을 공부하고 있습니다.</p>
+        <a href="#">website</a>
+    </body>
+</html>
