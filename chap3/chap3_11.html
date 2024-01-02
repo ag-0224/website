@@ -1,0 +1,35 @@
+<!-- Recap -->
+
+<!DOCTYPE html>
+
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <style>
+            body {
+                height: 1000vh;
+                margin: 50px;
+            }
+            /* placeholder의 색깔을 바꾸고 싶을 때 사용한다. */
+            span::placeholder {
+                color: yellowgreen;
+            }
+            /* padding은 적용되지 않는다. */
+            p::selection {
+                color: white;
+                background-color: yellowgreen;
+            }
+            p::first-letter {
+                color: white;
+                font-size: 50px;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="Name"/>
+            <p>저는 대학교 3학년생이고 코딩을 공부하고 있습니다. 주 언어는 아직은 정하지 못했습니다.</p>
+        </form>
+    </body>
+</html>
