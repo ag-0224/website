@@ -1,0 +1,32 @@
+<!-- Transition은 어떤 상태에서 다른 상태로 가는 변화를 애니메이션화 하는 것이다. -->
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <style>
+            /* transition은 state가 없는 쪽에 사용해야 한다. */
+            a {
+                color: white;
+                background-color: tomato;
+                text-decoration: none;
+                padding: 3px 5px;
+                border-radius: 5px;
+                font-size: 20px;
+                /* background-color, color에 transition을 정의 */
+                transition: background-color 10s ease-in-out, color 5s ease-in-out;
+                /* 변화하는 모든 것에 적용시킬 수 도 있다. */ 
+                transition: all 5s ease-in-out;
+                /* 무엇이든 state와 이곳에 꼭 있는 것만 transition을 적용시킬 수 있다. */
+            }
+            /* 상태일 때만 정의하면 변화가 바로 일어나고 transition은 있지 않다. */
+            a:hover {
+                color: tomato;
+                background-color: wheat;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">Go home</a>
+    </body>
+</html>
