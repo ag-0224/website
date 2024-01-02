@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>This is my website.</title>
+        <style>
+            body {
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            div {
+                background-color: teal;
+                width: 200px;
+                height: 200px; 
+            }
+            /* media query는 and를 통해서 연결된다. */
+            /* min-device-width는 모바일에서만 적용된다. desktop 브라우저는 알 수 없다.*/
+            @media screen and (min-device-width: 601px) and (max-width: 1200px) /* and (orientation: landscape) */{
+                div {
+                    background-color: wheat;
+                }
+            }
+            @media screen and (orientation: landscape) {
+                span {
+                    display: none;
+                }
+            }
+            @media print {
+                body {
+                    background-color: tomato;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <span></span>
+    </body>
+</html>
