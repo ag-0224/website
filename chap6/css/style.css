@@ -6,11 +6,13 @@
 @import "./screen/friends.css";
 @import "./screen/find.css";
 @import "./screen/more.css";
+@import "./screen/settings.css";
 @import "./components/nav-bar.css";
 @import "./components/screen-header.css";
 @import "./components/user-component.css";
 @import "./components/badge.css";
 @import "./components/icon-row.css";
+@import "./components/alt-screen-header.css";
 
 
 body {
