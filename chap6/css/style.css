@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 @import "reset.css";
 @import "variables.css";
-@import "./components/stat.css";
+
+/* screen */
+
 @import "./screen/login.css";
 @import "./screen/friends.css";
 @import "./screen/find.css";
 @import "./screen/more.css";
+@import "./screen/chat.css";
 @import "./screen/settings.css";
+
+/* components */
+
 @import "./components/nav-bar.css";
 @import "./components/screen-header.css";
 @import "./components/user-component.css";
 @import "./components/badge.css";
 @import "./components/icon-row.css";
 @import "./components/alt-screen-header.css";
-
+@import "./components/stat.css";
 
 body {
   color: #2e363e;
